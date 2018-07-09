@@ -1,0 +1,32 @@
+{
+  "name": "electron-media-player",
+  "version": "1.0.0",
+  "description": "AV media player\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dcross-platform AV media player",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anujdatar/electron-media-player.git"
+  },
+  "keywords": [
+    "ElectronJs",
+    "media",
+    "player",
+    "audio",
+    "player",
+    "video",
+    "player"
+  ],
+  "author": "Anuj Datar (anuj.datar@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anujdatar/electron-media-player/issues"
+  },
+  "homepage": "https://github.com/anujdatar/electron-media-player#readme",
+  "devDependencies": {
+    "electron": "^2.0.4"
+  }
+}
