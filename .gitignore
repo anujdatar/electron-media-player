@@ -65,3 +65,6 @@ typings/
 .idea
 .vs
 .vscode
+
+# local test media files
+assets/media/

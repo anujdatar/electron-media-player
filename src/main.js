@@ -14,7 +14,7 @@ function createWindow() {
     icon: path.join(__dirname, './assets/images/myLogo.png')
   })
   
-  mainWindow.loadFile(path.join(__dirname, './src/index.html'))
+  mainWindow.loadURL(`file://${__dirname}/index.html`)
   mainWindow.on('closed', () => {
     if (process.platform !== 'darwin'){
       app.quit()

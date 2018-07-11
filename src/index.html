@@ -5,10 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Electron Media Player</title>
+
+  <link rel="stylesheet" href="../assets/css/index.css">
 </head>
 <body>
+  <div class="background-image"></div>
+  <div class="container">
+    
+    <div id="audio-img">
+      <img class="cover-art">
+    </div>
+    
+    <div id="audio-player">
+      
+      <div id="audio-info">
+        <span class="artist"></span> - <span class="title"></span>
+      </div>
+      
+      <input type="range" id="volume" min="0" max="10" value="5">
+      <br>
 
-  <h1>hello world</h1>
+      <div id="audio-buttons">
+        <button id="prev" class="btn">Prev</button>
+        <button id="play" class="btn">Play</button>
+        <button id="pause" class="btn">Pause</button>
+        <button id="stop" class="btn">Stop</button>
+        <button id="next" class="btn">Next</button>
+      </div>
+      <div class="clearfix"></div>
+      <div id="tracker">
+        <div id="progressbar">
+          <span id="progress"></span>
+        </div>
+        <span id="duration"></span>
+      </div>
+      <div id="clearfix"></div>
+
+      <div id="playlist"></div>
+    </div>
+  </div>
   
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
