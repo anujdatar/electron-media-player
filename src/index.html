@@ -6,45 +6,66 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Electron Media Player</title>
 
+  <link rel="stylesheet" href="../assets/css/materialize/materialize.css">
+  <link rel="stylesheet" href="../node_modules/material-design-icons/iconfont/material-icons.css">
   <link rel="stylesheet" href="../assets/css/index.css">
+  <script src="./scripts/materialize/materialize.js"></script>
 </head>
+
 <body>
-  <div class="background-image"></div>
-  <div class="container">
-    
-    <div id="audio-img">
-      <img class="cover-art">
-    </div>
-    
-    <div id="audio-player">
-      
-      <div id="audio-info">
-        <span class="artist"></span> - <span class="title"></span>
-      </div>
-      
-      <input type="range" id="volume" min="0" max="10" value="5">
-      <br>
+  <header class="black">
+    my app
+    <div class="x-buttons">
 
-      <div id="audio-buttons">
-        <button id="prev" class="btn">Prev</button>
-        <button id="play" class="btn">Play</button>
-        <button id="pause" class="btn">Pause</button>
-        <button id="stop" class="btn">Stop</button>
-        <button id="next" class="btn">Next</button>
-      </div>
-      <div class="clearfix"></div>
-      <div id="tracker">
-        <div id="progressbar">
-          <span id="progress"></span>
-        </div>
-        <span id="duration"></span>
-      </div>
-      <div id="clearfix"></div>
-
-      <div id="playlist"></div>
     </div>
+  </header>
+
+  <div class="container" id="navlink">
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   </div>
-  
+  <ul class="sidenav blue-grey darken-4" id="slide-out">
+    <li><a href="#link1" class="sidenav-links">link 1</a></li>
+    <li><a href="#link2" class="sidenav-links">link 2</a></li>
+  </ul>
+
+  <div class="main">
+    <h1>welcome</h1>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <!-- FOOTER with audio controls -->
+  <footer class="page-footer grey darken-4 white-text">
+    
+    <div class="footer-artist-info">
+      <img class="current-artist-img" src="../assets/images/myLogo.png" width="50px"><br>
+      <a href="#song" class="current-song">song</a><br>
+      <a href="#artist" class="current-artist">artist</a>
+    </div>
+
+    <div class="rangefield" id="progress">
+      <span>
+        <input type="range" id="progressbar" min="0" max="100">
+      </span>
+    </div>
+
+    <div class="footer-buttons" id="controls">
+      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons md-light md-inactive">shuffle</i></a>
+      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons">skip_previous</i></a>
+      <a class="btn-floating btn-large waves-effect waves-light transparent"><i class="material-icons md-54">play_circle_outline</i></a>
+      <a class="btn-floating btn-large waves-effect waves-light transparent"><i class="material-icons md-54">pause_circle_outline</i></a>
+      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons">stop</i></a>
+      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons">skip_next</i></a>
+      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons md-light md-inactive">repeat</i></a>
+      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons md-light md-inactive">repeat_one</i></a>
+    </div>
+
+    <div class="rangefield" id="volume">
+      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons">volume_mute</i></a>
+      <input type="range" id="volumebar" min="0" max="20">
+    </div>
+  </footer>
+
   <script src="./scripts/index.js"></script>
 </body>
 </html>
