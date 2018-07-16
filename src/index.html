@@ -4,68 +4,152 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Electron Media Player</title>
+  <title>Electron Media App</title>
 
-  <link rel="stylesheet" href="../assets/css/materialize/materialize.css">
-  <link rel="stylesheet" href="../node_modules/material-design-icons/iconfont/material-icons.css">
   <link rel="stylesheet" href="../assets/css/index.css">
-  <script src="./scripts/materialize/materialize.js"></script>
+  <link rel="stylesheet" href="../assets/css/materialize-effects.css">
+  <link rel="stylesheet" href="../assets/css/materialize-colors.css">
 </head>
-
 <body>
-  <header class="black">
-    my app
-    <div class="x-buttons">
 
+  <header class="black white-text">
+    <div>
+      <a class="btn btn min-btn"><img src="../assets/images/icons-light/minimize.png"></a>
+      <a class="btn btn max-btn"><img src="../assets/images/icons-light/maximize.png"></a>
+      <a class="btn btn close-btn"><img src="../assets/images/icons-light/close.png"></a>
     </div>
   </header>
-
-  <div class="container" id="navlink">
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-  </div>
-  <ul class="sidenav blue-grey darken-4" id="slide-out">
-    <li><a href="#link1" class="sidenav-links">link 1</a></li>
-    <li><a href="#link2" class="sidenav-links">link 2</a></li>
-  </ul>
-
-  <div class="main">
-    <h1>welcome</h1>
-  </div>
-
-  <div class="clearfix"></div>
-
-  <!-- FOOTER with audio controls -->
-  <footer class="page-footer grey darken-4 white-text">
+  
+  <div class="sidenav blue">
+    <div class="sidenav-header">
+      <span class="app-title white-text">Electron Media Player</span><br>
+      <a class="btn menu-btn"><img src="../assets/images/icons-light/menu.png"></a><br>
+      <input type="search" placeholder="Search">
+    </div>
     
-    <div class="footer-artist-info">
-      <img class="current-artist-img" src="../assets/images/myLogo.png" width="50px"><br>
-      <a href="#song" class="current-song">song</a><br>
-      <a href="#artist" class="current-artist">artist</a>
+    <div class="nav-links">
+      <ul class="white-text">
+        <li><a class="btn"><img src="../assets/images/icons-light/artist.png">Artists</a></li>
+        <li><a class="btn"><img src="../assets/images/icons-light/album.png">Albums</a></li>
+        <li><a class="btn"><img src="../assets/images/icons-light/song.png">Songs</a></li>
+        <li><a class="btn"><img src="../assets/images/icons-light/playlist.png">Playlists</a></li>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+        <li>item 9</li>
+        <li>item 10</li>
+        <li>item 11</li>
+        <li>item 12</li>
+        <li>item 13</li>
+        <li>item 14</li>
+        <li>item 15</li>
+        <li>item 16</li>
+        <li>item 17</li>
+        <li>item 18</li>
+        <li>item 19</li>
+        <li>item 20</li>
+        <li>item 21</li>
+        <li>item 22</li>
+        <li>item 23</li>
+        <li>item 24</li>
+        <li>item 25</li>
+        <li>item 26</li>
+      </ul>
     </div>
 
-    <div class="rangefield" id="progress">
-      <span>
-        <input type="range" id="progressbar" min="0" max="100">
-      </span>
-    </div>
+  </div>
+  
+  <div class="main white-text">
+    welcome
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+      <li>item 6</li>
+      <li>item 7</li>
+      <li>item 8</li>
+      <li>item 9</li>
+      <li>item 10</li>
+      <li>item 11</li>
+      <li>item 12</li>
+      <li>item 13</li>
+      <li>item 14</li>
+      <li>item 15</li>
+      <li>item 16</li>
+      <li>item 17</li>
+      <li>item 18</li>
+      <li>item 19</li>
+      <li>item 20</li>
+      <li>item 21</li>
+      <li>item 22</li>
+      <li>item 23</li>
+      <li>item 24</li>
+      <li>item 25</li>
+      <li>item 26</li>
+      <li>item 27</li>
+      <li>item 28</li>
+      <li>item 29</li>
+      <li>item 30</li>
+      <li>item 31</li>
+      <li>item 32</li>
+      <li>item 33</li>
+      <li>item 34</li>
+      <li>item 35</li>
+      <li>item 36</li>
+      <li>item 37</li>
+      <li>item 38</li>
+      <li>item 39</li>
+      <li>item 40</li>
+      <li>item 41</li>
+      <li>item 42</li>
+      <li>item 43</li>
+    </ul>
+  </div>
 
-    <div class="footer-buttons" id="controls">
-      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons md-light md-inactive">shuffle</i></a>
-      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons">skip_previous</i></a>
-      <a class="btn-floating btn-large waves-effect waves-light transparent"><i class="material-icons md-54">play_circle_outline</i></a>
-      <a class="btn-floating btn-large waves-effect waves-light transparent"><i class="material-icons md-54">pause_circle_outline</i></a>
-      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons">stop</i></a>
-      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons">skip_next</i></a>
-      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons md-light md-inactive">repeat</i></a>
-      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons md-light md-inactive">repeat_one</i></a>
-    </div>
+  <footer class="grey darken-4 white-text">
+    <div class="toolbar">
+      <div class="current-artist-info">
+        <img src="../assets/images/myLogo.png" id="artist-footer-image"><br>
+        <a class="current-info current-song">song song</a><br>
+        <a class="current-info current-artist">artist artist</a>
+      </div>
 
-    <div class="rangefield" id="volume">
-      <a class="btn-floating waves-effect waves-light transparent"><i class="material-icons">volume_mute</i></a>
-      <input type="range" id="volumebar" min="0" max="20">
+      <div class="play-controls">
+        <div class="progress">
+          <span>
+            <input type="range" id="progress-bar" min="0" max="100">
+          </span>
+        </div>
+
+        <div class="control-btns">
+          <a class="btn btn-floating btn-small" id="shuffle"><img src="../assets/images/icons-light/shuffle.png" class="btn-images disable"></a>
+          <a class="btn btn-floating" id="previous"><img src="../assets/images/icons-light/skip_previous.png" class="btn-images"></a>
+          <a class="btn btn-floating btn-large" id="play"><img src="../assets/images/icons-light/play_circle.png" class="btn-images"></a>
+          <a class="btn btn-floating btn-large" id="pause"><img src="../assets/images/icons-light/pause_circle.png" class="btn-images"></a>
+          <a class="btn btn-floating" id="stop"><img src="../assets/images/icons-light/stop.png" class="btn-images"></a>
+          <a class="btn btn-floating" id="next"><img src="../assets/images/icons-light/skip_next.png" class="btn-images"></a>
+          <a class="btn btn-floating btn-small" id="repeat"><img src="../assets/images/icons-light/repeat.png" class="btn-images disable"></a>
+          <a class="btn btn-floating btn-small" id="repeat_one"><img src="../assets/images/icons-light/repeat_one.png" class="btn-images disable"></a>
+
+        </div>
+      </div>
+
+      <div class="volume-control">
+        <a class="btn btn-floating btn-small" id="mute"><img src="../assets/images/icons-light/volume.png" class="btn-images"></a>
+        <input type="range" id="volume-bar" min="0" max="100">
+      </div>
+
     </div>
   </footer>
 
-  <script src="./scripts/index.js"></script>
+
+
 </body>
 </html>
