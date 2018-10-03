@@ -8,6 +8,7 @@ let mainWindow
 
 function createWindow() {
   mainWindow = new BrowserWindow({
+    frame: false,
     width: 800,
     height: 600,
     title: 'Electron Media Player',
@@ -29,6 +30,7 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
+
 
 app.on('activate', () => {
   if (mainWindow === null) {

@@ -55,6 +55,7 @@ a {
 header {
   grid-area: header;
   text-align: right;
+  /* -webkit-app-region: drag; */
 }
 header a.btn {
   margin: 0;
@@ -92,7 +93,8 @@ header a img {
   align-items: center;
   text-align: center;
   overflow: auto;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background8.jpg);
+  /* background-image: url(../images/black-bg.jpg.png); */
   background-color: rgba(255, 255, 255, 0.2);
   background-blend-mode: lighten;
 }
